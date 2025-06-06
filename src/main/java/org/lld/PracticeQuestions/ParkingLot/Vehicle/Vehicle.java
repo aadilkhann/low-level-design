@@ -4,10 +4,13 @@ import org.lld.PracticeQuestions.ParkingLot.Infrastructure.ParkingSpot;
 
 public abstract class Vehicle {
     String numberPlate;
-//    VehicleType type;
 
     public Vehicle(String numberPlate){
         this.numberPlate=numberPlate;
+    }
+
+    public String getNumberPlate() {
+        return numberPlate;
     }
 
     public abstract VehicleType getType();
@@ -19,4 +22,5 @@ public abstract class Vehicle {
 //    public void clearSpot(){
 //
 //    }
+
 }
