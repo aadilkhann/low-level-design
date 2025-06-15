@@ -4,6 +4,10 @@ public abstract class Logger {
     LogLevel  level;
     Logger nextLogger;
 
+    public Logger(LogLevel level) {
+        this.level = level;
+    }
+
     public Logger setNextLogger(Logger nextLogger) {
         this.nextLogger = nextLogger;
         return nextLogger;
