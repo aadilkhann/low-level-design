@@ -1,4 +1,4 @@
-package org.lld.DesignPatterns.Behavioral.ChainOfResponsiblity;
+package org.lld.DesignPatterns.Behavioral.ChainOfResponsiblity.ATMMachine;
 
 public class ATMDispenser {
     public static void main(String[] args) {

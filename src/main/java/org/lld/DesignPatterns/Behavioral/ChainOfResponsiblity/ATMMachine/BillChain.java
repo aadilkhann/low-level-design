@@ -1,4 +1,4 @@
-package org.lld.DesignPatterns.Behavioral.ChainOfResponsiblity;
+package org.lld.DesignPatterns.Behavioral.ChainOfResponsiblity.ATMMachine;
 
 public abstract class BillChain {
     BillChain handler;
