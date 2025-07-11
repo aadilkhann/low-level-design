@@ -12,10 +12,11 @@ public class Screen {
     private List<Seat> seatList;
     Show show;
 
-    public Screen(UUID uuid, String name, List<Seat> seatList) {
+    public Screen(UUID uuid, String name, List<Seat> seatList, Show show) {
         this.uuid = uuid;
         this.name = name;
         this.seatList = seatList;
+        this.show = show;
     }
 
     public UUID getUuid() {
@@ -30,7 +31,23 @@ public class Screen {
         return seatList;
     }
 
+    public Show getShow() {
+        return show;
+    }
+
+    public void setUuid(UUID uuid) {
+        this.uuid = uuid;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public void setSeatList(List<Seat> seatList) {
         this.seatList = seatList;
+    }
+
+    public void setShow(Show show) {
+        this.show = show;
     }
 }
