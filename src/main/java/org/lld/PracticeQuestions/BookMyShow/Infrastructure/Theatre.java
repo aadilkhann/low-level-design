@@ -10,10 +10,12 @@ public class Theatre {
     String name;
     List<Screen>  screenList;
 
-    public Theatre(UUID uuid, String name, List<Screen> screenList) {
+    public Theatre(UUID uuid, String name,int totalScreens) {
         this.uuid = uuid;
         this.name = name;
-        this.screenList = screenList;
+        for (int i = 0; i < totalScreens; i++) {
+            screenList.add(new Screen(UUID.randomUUID(), "Screen-"+i+1,50,null));
+        }
     }
 
     public UUID getUuid() {

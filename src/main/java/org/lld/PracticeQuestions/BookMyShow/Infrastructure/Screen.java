@@ -12,11 +12,14 @@ public class Screen {
     private List<Seat> seatList;
     Show show;
 
-    public Screen(UUID uuid, String name, List<Seat> seatList, Show show) {
+    public Screen(UUID uuid, String name, int totalSeat, Show show) {
         this.uuid = uuid;
         this.name = name;
-        this.seatList = seatList;
         this.show = show;
+
+        for (int i = 0; i < totalSeat; i++) {
+            seatList.add(new Seat(i,SeatType.PREMIUM));
+        }
     }
 
     public UUID getUuid() {

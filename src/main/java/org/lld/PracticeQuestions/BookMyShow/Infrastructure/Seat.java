@@ -4,14 +4,14 @@ import org.lld.PracticeQuestions.BookMyShow.Constants.SeatType;
 import org.lld.PracticeQuestions.BookMyShow.Constants.SeatStatus;
 
 public class Seat {
-    private int seatNumber;
+    private final int seatNumber;
     private SeatType seatType;
     private SeatStatus seatStatus;
 
-    public Seat(int seatNumber, SeatType seatType, SeatStatus seatStatus) {
+    public Seat(int seatNumber, SeatType seatType) {
         this.seatNumber = seatNumber;
         this.seatType = seatType;
-        this.seatStatus = seatStatus;
+        this.seatStatus = SeatStatus.FREE;
     }
 
     public int getSeatNumber() {
