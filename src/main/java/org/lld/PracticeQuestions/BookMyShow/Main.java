@@ -34,7 +34,7 @@ public class Main {
         City newCity1=manageInfra.addNewCity("Delhi");
         cities.add(newCity1);
 
-        manageInfra.addNewTheatre();
+//        manageInfra.addNewTheatre();
 
     }
 }

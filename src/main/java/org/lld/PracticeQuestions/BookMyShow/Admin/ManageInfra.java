@@ -11,7 +11,7 @@ public class ManageInfra {
         Theatre theatre=new Theatre(UUID.randomUUID(),cityName,screens);
         for(int i=0;i<cities.size();i++){
             if(cities.get(i).getName().equals(cityName)){
-                cities.get(i).setTheatreList();
+//                cities.get(i).setTheatreList();
             }
         }
     }
