@@ -1,4 +1,4 @@
-package org.lld.DesignPatterns.Creational.Builder;
+package org.lld.DesignPatterns.Creational.Builder.ComputersBuilder;
 
 public class Computer {
     private String CPU;

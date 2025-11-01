@@ -1,4 +1,4 @@
-package org.lld.DesignPatterns.Creational.Builder;
+package org.lld.DesignPatterns.Creational.Builder.ComputerBuilder;
 
 public class BuilderPattern {
     public static void main(String[] args) {
